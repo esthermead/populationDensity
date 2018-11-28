@@ -1,0 +1,54 @@
+_CONCLUSION-MLPlinear9-populationDensity
+
+
+what, testvalue1, testvalue2, truevalue1, truevalue2, 
+	alpha, iterations, predictedvalue1, predictedvalue2.
+
+
+populationDensity_stdscaler_zeros_retained.txt, 50, 192, TRUE= -0.459285807, 1.206961646,
+	0.001, 500, overflow errors.
+
+
+populationDensity_minmaxscaler_zeros_retained.txt, 82, 103, TRUE= 0.001385019, 0.005922595,
+	0.001, 500, overflow errors.
+
+
+populationDensity_stdscaler_both_featuers_zeros_retained.txt, 0.160323609, 0.244321747, TRUE= -0.459285807, -0.459285807,
+	0.001, 500, 0.009180, 0.013990.
+	1.0, 150000, 0.023349, 0.035582.
+	1.0, 300000, 0.023349, 0.035582
+	-works (no errors) when standardize both features, but not good at predicting.
+
+
+populationDensity_minmaxscaler_both_features_zeros_retained.txt., 0.183183183, 0.24024024, TRUE= 0, 0.001385019,
+	0.001, 500, 0.027602, 0.027943.
+	1.0, 150000, 0.071325, 0.078195.
+	1.0, 300000, 0.071325, 0.078195.
+	-works (no errors) when standardize both features, but not good at predicting.
+
+
+populationDensity_stdscaler_zeros_removed.txt, 52, 123, TRUE= -0.319228218, 4.06386169,
+	0.001, 500, overflow errors.
+
+
+populationDensity_minmaxscaler_zeros_removed.txt, 52, 114, TRUE= 0.029264525, 0.239379095,
+	0.001, 500, overflow errors.
+
+
+populationDensity_stdscaler_both_features_zeros_removed.txt, -0.124242752, -0.060863187, TRUE= -0.342308935, -0.319228218,
+	0.001, 500, -0.006454, -0.003161.
+	1.0, 150000, -0.016417, -0.008042.
+	1.0, 300000, -0.016417, -0.008042.
+	-works (no errors) when standardize both features, but not good at predicting.
+
+
+populationDensity_minmaxscaler_both_features_zeros_removed.txt, 0.147590361, 0.177710843, TRUE= 0.029264525, 0.011390259,
+	0.001, 500, 0.032003, 0.032209.
+	1.0, 150000, 0.078102, 0.081387.
+	1.0, 300000, 0.078102, 0.081387.
+	-works (no errors) when standardize both features, but not good at predicting.
+
+
+can go back later and continue to vary alpha and iterations if want, but probably won't improve prediction.
+
+see .ipynb
