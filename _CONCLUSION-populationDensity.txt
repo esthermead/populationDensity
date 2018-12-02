@@ -37,6 +37,7 @@ populationDensity_minmaxscaler_zeros_removed.txt, 52, 114, TRUE= 0.029264525, 0.
 
 populationDensity_stdscaler_both_features_zeros_removed.txt, -0.124242752, -0.060863187, TRUE= -0.342308935, -0.319228218,
 	0.001, 500, -0.006454, -0.003161.
+	0.003, 2000, -0.016377, -0.008023. <--the one shown in project presentation.
 	1.0, 150000, -0.016417, -0.008042.
 	1.0, 300000, -0.016417, -0.008042.
 	-works (no errors) when standardize both features, but not good at predicting.
